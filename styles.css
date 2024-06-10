@@ -1,0 +1,188 @@
+@font-face {
+    font-family: norse-font;
+    src: url(/Norse-Bold.otf);
+}
+
+:root {
+    --form-padding: 5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+
+}
+
+html {
+    font-family: fantasy;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+main {
+    display: flex;
+
+}
+
+.sidebar {
+    background-image: url('/wp.jpg');
+    background-size: cover;
+    filter: brightness(85%) blur(0.4px);
+    height: 100vh;
+    min-width: 30%
+}
+
+.logo-container {
+    font-family: norse-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.377);
+    margin-top: 34%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 85%;
+}
+
+.sidebar-right {
+    background-color: #e9e7e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar-right .text h2:nth-child(3) {
+    margin-top: 1.5rem;
+}
+
+.text {
+    padding: 0 var(--form-padding);
+    font-size: .9rem;
+    padding-bottom: 3rem;
+    width: 70%;
+}
+
+.text span {
+    font-style: italic;
+}
+
+.inputs-container {
+    box-shadow: 0px 5px 7px 0px #b3b3b380;
+    background-color: #f3f1ed;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--form-padding);
+}
+
+.inputs-container h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.inputs {
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    flex: 1;
+}
+
+.inputs input {
+    border: 1px solid #a5a5a580;
+    /* padding: 8px 80px 8px 5px ; */
+    width: 18rem;
+    padding: 8px 0 8px 8px;
+    border-radius: 5px;
+    display: flex;
+    flex: 1;
+}
+
+.inputs input:focus {
+    box-shadow: 0px 5px 7px 3px #b3b3b380;
+}
+
+.inputs label {
+    letter-spacing: 1.5px;
+    color: rgb(10, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.inputs .group {
+    margin: 1.2rem 0;
+}
+
+form button {
+    margin: 0 var(--form-padding);
+    background-color: #c02e27;
+    box-shadow: 0px 0px 7px 0px #a8a8a880;
+    padding: 10px 45px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.login {
+    padding-left: var(--form-padding);
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.login a {
+    color: #c02e27;
+    font-weight: bolder;
+}
